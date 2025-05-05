@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Check Weather - Farmer's Info Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e3f2fd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #1976d2;
+      margin: 0;
+    }
+    .weather-form {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      width: 100%;
+    }
+    .weather-form h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #1976d2;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #90caf9;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s;
+    }
+    input[type="text"]:focus {
+      border-color: #1976d2;
+      outline: none;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #1976d2;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #0d47a1;
+    }
+    .result {
+      margin-top: 20px;
+      text-align: center;
+      color: #333;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Check Weather</h1>
+  </header>
+
+  <div class="weather-form">
+    <h2>Enter Your Location</h2>
+    <form id="weatherForm">
+      <div class="form-group">
+        <label for="city">City Name:</label>
+        <input type="text" id="city" name="city" placeholder="Enter city..." required>
+      </div>
+      <button type="submit">Get Weather</button>
+    </form>
+    <div class="result" id="result"></div>
+  </div>
+
+  <nav>
+    <a href="index.html">Back to Home</a>
+  </nav>
+
+  <script>
+    const form = document.getElementById('weatherForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const city = document.getElementById('city').value;
+      resultDiv.innerHTML = `Fetching weather for <strong>${city}</strong>... 🌦️`;
+
+      // Simulate fetch (for demo)
+      setTimeout(() => {
+        resultDiv.innerHTML = `The current weather in <strong>${city}</strong> is sunny with 25°C 🌞.`;
+      }, 1500);
+    });
+  </script>
+
+</body>
+</html>

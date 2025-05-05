@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmer's Info Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f8e9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #4CAF50, #81C784);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .card-content h2 {
+      margin: 0 0 10px;
+      color: #4CAF50;
+    }
+    .card-content p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <h1>Farmer's Info Hub</h1>
+    <p>Your trusted source for farming tools, knowledge & support</p>
+  </header>
+
+  <main>
+
+
+    <!-- Crops -->
+    <a href="crops.html" class="card" target="_blank">
+            <div class="card-content">
+        <h2>Crops</h2>
+        <p>Know about crop types, seasons, and growing methods.</p>
+      </div>
+    </a>
+
+    <!-- Weather -->
+    <a href="weather.html" class="card" target="_blank">
+           <div class="card-content">
+        <h2>Weather</h2>
+        <p>Get live weather updates and plan your farming schedule.</p>
+      </div>
+    </a>
+
+    <!-- Farming Tips -->
+    <a href="tips.html" class="card" target="_blank">
+            <div class="card-content">
+        <h2>Farming Tips</h2>
+        <p>Improve yield and sustainability with expert tips.</p>
+      </div>
+    </a>
+
+    <!-- Market Prices -->
+    <a href="market.html" class="card" target="_blank">
+            <div class="card-content">
+        <h2>Market Prices</h2>
+        <p>Check latest local market prices for your crops.</p>
+      </div>
+    </a>
+
+    <!-- Contacts -->
+    <a href="contacts.html" class="card" target="_blank">
+            <div class="card-content">
+        <h2>Contacts</h2>
+        <p>Get in touch with agricultural experts and support teams.</p>
+      </div>
+    </a>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Farmer's Info Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>

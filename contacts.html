@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4c3;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #558b2f;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .contact-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .contact-card h2 {
+      margin-top: 0;
+      color: #558b2f;
+    }
+    .contact-card p {
+      margin: 10px 0;
+      color: #555;
+      font-size: 0.95em;
+    }
+    .icon {
+      font-size: 40px;
+      color: #8bc34a;
+      margin-bottom: 15px;
+    }
+    footer {
+      background: #558b2f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We’re here to support you. Reach out anytime!</p>
+  </header>
+
+  <div class="container">
+    <div class="contact-card">
+      <div class="icon">📞</div>
+      <h2>Call Us</h2>
+      <p>+91 98765 43210</p>
+      <p>Mon - Fri: 9AM - 5PM</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">✉️</div>
+      <h2>Email</h2>
+      <p>support@farmhub.com</p>
+      <p>We reply within 24 hours</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h2>Visit Office</h2>
+      <p>123 Green Fields Road</p>
+      <p>Agri City, India</p>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🌐</div>
+      <h2>Website</h2>
+      <p><a href="https://www.farmhub.com" target="_blank">www.farmhub.com</a></p>
+      <p>Find more resources online</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Farmer's Info Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
